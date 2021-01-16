@@ -4,20 +4,20 @@ from sys import exit
 def getNum():
 	while True:
 			try:
-				num = int(input("Write number: "))
+				num = int(input("Запишіть число: "))
 				return num
 			except:
-				print("Wrong number, try again")
+				print("Хибне число, повторіть")
 
 
 def getOperation():
 	while True:
 		try:
-			operation = input("Write operation: ")
+			operation = input("Впишіть операцію: ")
 			if operation in ("+", "-", "*", "/", "%", "//"):
 				return operation
 		except:
-			print("Wrong operation, try again")
+			print("Хибна операція, повторіть")
 
 
 num1 = getNum()
@@ -33,7 +33,7 @@ elif operation == "*":
 	result = num1 * num2
 elif operation == "/":
 	if num2 == 0:
-		print("Cannot be divided by zero!")
+		print("Не можна ділити на нуль")
 		exit()
 	result = num1 / num2
 elif operation == "%":
