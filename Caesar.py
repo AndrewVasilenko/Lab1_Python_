@@ -1,3 +1,4 @@
+#Функція шифрування Цезаря
 def encrypt(text,s):
     result = ""
     # Формування шифрованого тексту
@@ -24,10 +25,9 @@ def encrypt(text,s):
       if(not (ord(char)>=65 and ord(char)<=122) and not (ord(char)>=1040 and ord(char)<=1105)):
           result +=char
     return result
-print (ord("і"))
 print ("Введіть тест для шифрування : " )
 text=input()
-print ("Веддіть ключ шифрування (кількість символлів на яку відбувається зсув):")
+print ("Веддіть ключ шифрування (кількість символів на яку відбувається зсув):")
 s=input()
 s=int(s)
 print ("Зашифрований текст: " + encrypt(text,s))
